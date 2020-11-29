@@ -2,8 +2,7 @@
 Tests that primitive parser, that accept a character or a fixed string work.
 '''
 
-from ..primitives import char_, str_
-from ..exceptions import ParseError
+from aptwe import char_, str_, ParseError
 
 
 def test_that_string_parser_works():

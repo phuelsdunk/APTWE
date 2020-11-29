@@ -2,8 +2,8 @@
 A Json parser.
 '''
 
-from .. import Parser, str_, char_, getitem, concat
-from ..addons import float_, int_, space_
+from aptwe import Parser, str_, char_, getitem, concat
+from aptwe.addons import float_, int_, space_
 
 _parser = Parser('Json')
 __esc_char_ = (str_('\\') >> char_())[getitem(1)] | char_('"').inv()
