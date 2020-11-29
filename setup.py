@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name='aptwe',
-    version='0.1',
+    version='0.1.1',
     author='Philipp Hülsdunk',
     author_email='mail@huelsdunk.tech',
     description='Parser framework',
