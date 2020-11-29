@@ -1,6 +1,6 @@
-# APTWE
+# aptwe
 
-APTWE is a framework to create recursive descent parsers. It intends to define
+aptwe is a framework to create recursive descent parsers. It intends to define
 parsers inside the Python syntax similarily to writing EBNF. For example:
 
 ~~~

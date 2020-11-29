@@ -2,7 +2,7 @@
 Tests that parser composition rules work.
 '''
 
-from .. import Parser, str_, ParseError
+from aptwe import Parser, str_, ParseError
 
 
 def test_that_concatenation_works():
