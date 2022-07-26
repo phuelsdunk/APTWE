@@ -5,8 +5,9 @@ parsers inside the Python syntax similarily to writing EBNF. For example:
 
 ~~~
 nested_lists_ = Parser('NestedLists')
-list_contents_ = int_ >> str_(',') >> int_
-list_ = (str_('[') >> list_contents_ >> str_(']'))[getitem(1)]
+head_ = nested_lists_
+tail_ = ~(str_(',') >> nested_lists_)[getitem(1)]
+list_ = (str_('[') >> head_ >> tail_ >> str_(']'))[lambda x: [x[1]] + x[2]]
 nested_lists_[...] = int_ | list_
 
 nested_lists_.loads('[1,[2,3]]') # Returns [1,[2,3]]
